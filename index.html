@@ -3,12 +3,38 @@
 <head>
   <meta charset="utf-8">
   <title>Portfolio</title>
-  <base href="/">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="assets/css/main.css" >
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.7/fullpage.min.css" integrity="sha256-3IkGqGYOvq1Ype2MXFwVJFeBtBACgiveho3SacOEEP8=" crossorigin="anonymous" />
 </head>
 <body>
-  <app-root></app-root>
-<script type="text/javascript" src="runtime.js"></script><script type="text/javascript" src="es2015-polyfills.js" nomodule></script><script type="text/javascript" src="polyfills.js"></script><script type="text/javascript" src="styles.js"></script><script type="text/javascript" src="vendor.js"></script><script type="text/javascript" src="main.js"></script></body>
+
+    <div id="fullPage">
+
+      <div class="section s1">
+        <h1>Hi, I'm Clyde Santos.<br>
+          I'm a full-stack web developer.
+        </h1>
+
+      </div>
+
+      <div class="section s2">
+        <h1>the 2nd section</h1>
+      </div>
+
+      <div class="section s3">
+        <h1>the 3rd section</h1>
+      </div>
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.7/fullpage.min.js" integrity="sha256-e13jRNqOX98m6UAwI/yZTpcDseJtA8s86yfFs4Sqrv8=" crossorigin="anonymous"></script>
+    <script>
+      new fullpage('#fullPage',{
+        autoScrolling:true
+      })
+    </script>
+</body>
+
 </html>

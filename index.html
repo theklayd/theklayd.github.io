@@ -6,18 +6,23 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="assets/css/main.css" >
-  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.7/fullpage.min.css" integrity="sha256-3IkGqGYOvq1Ype2MXFwVJFeBtBACgiveho3SacOEEP8=" crossorigin="anonymous" />
 </head>
 <body>
 
     <div id="fullPage">
 
-      <div class="section s1">
-        <h1>Hi, I'm Clyde Santos.<br>
-          I'm a full-stack web developer.
-        </h1>
-
+      <div class="section">
+        <div class="welcome-container">
+          <div class="welcome">
+            <img src="assets/icon.svg" class="icon"><br>
+            <h1>
+              Hi, I'm a full-stack web developer.<br>
+              My name is Clyde Santos.
+            </h1>
+          </div>
+        </div>
       </div>
 
       <div class="section s2">
@@ -32,7 +37,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.7/fullpage.min.js" integrity="sha256-e13jRNqOX98m6UAwI/yZTpcDseJtA8s86yfFs4Sqrv8=" crossorigin="anonymous"></script>
     <script>
       new fullpage('#fullPage',{
-        autoScrolling:true
+        autoScrolling:true,
+        scrollHorizontally: true
       })
     </script>
 </body>

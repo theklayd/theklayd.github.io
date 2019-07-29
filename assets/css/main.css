@@ -1,8 +1,42 @@
 html {
   font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-.s1 h1 {
+.welcome-container {
+  height: 100%;
+  position: relative;
+  background-color: #222222;
+}
+
+.welcome {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.welcome img {
+  height: 256px;
+  width: 256px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.welcome h1 {
+  margin: 0;
+  font-size: calc(1.5em + 1vw);
   text-align: center;
+  color: #F4F1D0;
+}
+
+.border {
+  border-style: solid;
+  border-color: green;
 }
 /*# sourceMappingURL=main.css.map */

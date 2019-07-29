@@ -10,37 +10,35 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.7/fullpage.min.css" integrity="sha256-3IkGqGYOvq1Ype2MXFwVJFeBtBACgiveho3SacOEEP8=" crossorigin="anonymous" />
 </head>
 <body>
+  <div id="fullPage">
 
-    <div id="fullPage">
-
-      <div class="section">
-        <div class="welcome-container">
-          <div class="welcome">
-            <img src="assets/icon.svg" class="icon"><br>
-            <h1>
-              Hi, I'm a full-stack web developer.<br>
-              My name is Clyde Santos.
-            </h1>
-          </div>
+    <div class="section">
+      <div class="welcome-container">
+        <div class="welcome">
+          <img src="assets/icon.svg" class="icon"><br>
+          <h1>Hi, I'm a full-stack web developer.<br>My name is Clyde Santos.</h1>
         </div>
       </div>
-
-      <div class="section s2">
-        <h1>the 2nd section</h1>
-      </div>
-
-      <div class="section s3">
-        <h1>the 3rd section</h1>
-      </div>
-
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.7/fullpage.min.js" integrity="sha256-e13jRNqOX98m6UAwI/yZTpcDseJtA8s86yfFs4Sqrv8=" crossorigin="anonymous"></script>
-    <script>
-      new fullpage('#fullPage',{
-        autoScrolling:true,
-        scrollHorizontally: true
-      })
-    </script>
-</body>
 
+    <div class="section">
+      <h1>the 2nd section</h1>
+    </div>
+
+    <div class="section">
+      <h1>the 3rd section</h1>
+    </div>
+
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.7/fullpage.min.js" integrity="sha256-e13jRNqOX98m6UAwI/yZTpcDseJtA8s86yfFs4Sqrv8=" crossorigin="anonymous"></script>
+  <script>
+    new fullpage('#fullPage',{
+      autoScrolling:true,
+      scrollHorizontally: true,
+      // scrolling
+      scrollingSpeed: 600,
+      scrollBar: true
+    })
+  </script>
+</body>
 </html>

@@ -6,6 +6,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="assets/css/main.css" >
+  <link rel="stylesheet" type="text/css" href="assets/css/sprite_60fps.css"/>
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.7/fullpage.min.css" integrity="sha256-3IkGqGYOvq1Ype2MXFwVJFeBtBACgiveho3SacOEEP8=" crossorigin="anonymous" />
 </head>
@@ -15,8 +16,12 @@
     <div class="section">
       <div class="welcome-container">
         <div class="welcome">
-          <img src="assets/icon.svg" class="icon"><br>
+            <div class="iconAnimation play" id="icon" onclick="resetAnim()" style="background-image: url(assets/sprite_60fps.svg)"></div>
+          <!-- <img src="assets/icon.svg" class="border"><br> -->
           <h1>Hi, I'm a full-stack web developer.<br>My name is Clyde Santos.</h1>
+          <button>more details
+            <img src="assets/down-carret.svg">
+          </button>
         </div>
       </div>
     </div>
@@ -38,7 +43,17 @@
       // scrolling
       scrollingSpeed: 600,
       scrollBar: true
-    })
+    });
+
+    function resetAnim(){
+      var icon = document.getElementById('icon');
+      icon.style.animation ='none';
+      icon.offsetHeight;  /* trigger reflow */
+      icon.style.animation = null;
+    }
+
+
+
   </script>
 </body>
 </html>

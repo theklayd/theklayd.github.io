@@ -17,23 +17,66 @@ html {
     margin-right: -50%;
     transform: translate(-50%, -50%);
 
-    img{
-      height: 256px;
-      width:256px;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
     h1{
       margin:0;
       font-size: calc(1.5em + 1vw);
       text-align: center;
-      color: #F4F1D0
+      color: #F4F1D0;
     }
+
+    button{
+      background-color: #111111; /* Green */
+      border: none;
+      color: #F4F1D0;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      font-size: 30px;
+      box-shadow: 0 0 7px #F4F1D0;
+      display: block;
+      margin-top: 30px;
+      margin-left: auto;
+      margin-right: auto;
+      cursor: pointer;
+      
+      img{
+        height: 30px;
+        width: 30px;
+        margin-top: 5px;
+      }
+    }
+
   }
+
 
   .border{
     border-style: solid;
     border-color: green;
   }
+
+  // animation
+
+  @keyframes play59 {
+    0% {
+      background-position: 0px 0px;
+    }
+    100% {
+      background-position: -15104px 0px;
+    }
+  }
+  .iconAnimation {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    animation-duration: 975ms;
+    animation-timing-function: steps(59);
+    animation-fill-mode: forwards;
+    width: 256px;
+    height: 256px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+  }
+  .iconAnimation.play {
+    animation-name: play59;
+  }
+  

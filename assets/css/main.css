@@ -1,11 +1,11 @@
-html {
+body {
   font-family: 'Montserrat', sans-serif;
   margin: 0;
   padding: 0;
 }
 
 .welcome-container {
-  height: 100%;
+  height: 100vh;
   position: relative;
   background-color: #222222;
 }
@@ -106,18 +106,18 @@ html {
 }
 
 .about-container {
-  height: 100%;
+  height: 100vh;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr 1fr;
   -ms-grid-rows: 1fr 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr 1fr;
-  background-color: #F4F1D0;
+  background-color: #eaeaea;
 }
 
 .contact-container {
-  height: 100%;
+  height: 100vh;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr 1fr;

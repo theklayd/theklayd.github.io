@@ -6,32 +6,29 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="assets/css/main.css" >
-  <link rel="stylesheet" type="text/css" href="assets/css/sprite_60fps.css"/>
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.7/fullpage.min.css" integrity="sha256-3IkGqGYOvq1Ype2MXFwVJFeBtBACgiveho3SacOEEP8=" crossorigin="anonymous" />
 </head>
 <body>
   <div id="fullPage">
 
-    <div class="section">
-      <div class="welcome-container">
-        <div class="welcome">
-            <div class="iconAnimation play" id="icon" onclick="resetAnim()" style="background-image: url(assets/sprite_60fps.svg)"></div>
-          <!-- <img src="assets/icon.svg" class="border"><br> -->
-          <h1>Hi, I'm a full-stack web developer.<br>My name is Clyde Santos.</h1>
-          <button>more details
-            <img src="assets/down-carret.svg">
-          </button>
-        </div>
+    <div class="section welcome-container" data-anchor="home">
+      <div class="welcome">
+        <div class="icon iconAnimation play" id="icon" onclick="resetAnim()" style="background-image: url(assets/sprite_60fps.svg)"></div>
+        <h1>Hi, I'm full-stack web developer!</h1>
+        <h3>My name is Clyde Santos.</h3>
+        <a href="http://127.0.0.1:5500/#about">more details</a>
       </div>
     </div>
 
-    <div class="section">
-      <h1>the 2nd section</h1>
+    <div class="section about-container" data-anchor="about">
+        <h1>the 2nd section</h1>
     </div>
 
-    <div class="section">
+    <div class="section contact-container" data-anchor="contact">
       <h1>the 3rd section</h1>
+
+      <a href="http://127.0.0.1:5500/#home">home</a>
     </div>
 
   </div>
@@ -40,9 +37,9 @@
     new fullpage('#fullPage',{
       autoScrolling:true,
       scrollHorizontally: true,
+      anchors:['home', 'about', 'contact'],
       // scrolling
-      scrollingSpeed: 600,
-      scrollBar: true
+      scrollingSpeed: 700
     });
 
     function resetAnim(){

@@ -3,6 +3,7 @@ html {
     margin: 0;
     padding:0;
   }
+// welcome 
   .welcome-container{
     height: 100%;
     position: relative;
@@ -23,15 +24,24 @@ html {
       text-align: center;
       color: #F4F1D0;
     }
+    h3{
+      margin:0;
+      font-size: calc(1em + 1vw);
+      text-align: center;
+      color: #F4F1D0;
+    }
 
-    button{
-      background-color: #111111; /* Green */
+
+
+    a{
+      background-color: #111111;
       border: none;
       color: #F4F1D0;
-      padding: 15px 32px;
+      width: 200px;
+      padding: 16px 32px;
       text-align: center;
       text-decoration: none;
-      font-size: 30px;
+      font-size: 20px;
       box-shadow: 0 0 7px #F4F1D0;
       display: block;
       margin-top: 30px;
@@ -57,26 +67,51 @@ html {
   // animation
 
   @keyframes play59 {
-    0% {
-      background-position: 0px 0px;
+      0% {
+        background-position: 0px 0px;
+      }
+      100% {
+        background-position: -15104px 0px;
+      }
     }
-    100% {
-      background-position: -15104px 0px;
+    .icon{
+      width: 256px;
+      height: 256px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      cursor: pointer;
     }
+    .iconAnimation {
+      animation-duration: 975ms;
+      animation-timing-function: steps(59);
+      animation-fill-mode: forwards;
+      background-repeat: no-repeat;
+    }
+
+    .iconAnimation.play {
+      animation-name: play59;
+    }
+  // icon animation end
+// welcome end
+
+// about
+  .about-container{
+    height:100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    background-color: #F4F1D0;
   }
-  .iconAnimation {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    animation-duration: 975ms;
-    animation-timing-function: steps(59);
-    animation-fill-mode: forwards;
-    width: 256px;
-    height: 256px;
-    background-repeat: no-repeat;
-    cursor: pointer;
+// about end
+
+// contact
+  .contact-container{
+    height:100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    background-color: #222222;
   }
-  .iconAnimation.play {
-    animation-name: play59;
-  }
+
   

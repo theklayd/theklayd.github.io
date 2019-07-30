@@ -27,15 +27,22 @@ html {
   color: #F4F1D0;
 }
 
-.welcome button {
+.welcome h3 {
+  margin: 0;
+  font-size: calc(1em + 1vw);
+  text-align: center;
+  color: #F4F1D0;
+}
+
+.welcome a {
   background-color: #111111;
-  /* Green */
   border: none;
   color: #F4F1D0;
-  padding: 15px 32px;
+  width: 200px;
+  padding: 16px 32px;
   text-align: center;
   text-decoration: none;
-  font-size: 30px;
+  font-size: 20px;
   -webkit-box-shadow: 0 0 7px #F4F1D0;
           box-shadow: 0 0 7px #F4F1D0;
   display: block;
@@ -45,7 +52,7 @@ html {
   cursor: pointer;
 }
 
-.welcome button img {
+.welcome a img {
   height: 30px;
   width: 30px;
   margin-top: 5px;
@@ -74,24 +81,49 @@ html {
   }
 }
 
-.iconAnimation {
+.icon {
+  width: 256px;
+  height: 256px;
   display: block;
   margin-left: auto;
   margin-right: auto;
+  cursor: pointer;
+}
+
+.iconAnimation {
   -webkit-animation-duration: 975ms;
           animation-duration: 975ms;
   -webkit-animation-timing-function: steps(59);
           animation-timing-function: steps(59);
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  width: 256px;
-  height: 256px;
   background-repeat: no-repeat;
-  cursor: pointer;
 }
 
 .iconAnimation.play {
   -webkit-animation-name: play59;
           animation-name: play59;
+}
+
+.about-container {
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+  background-color: #F4F1D0;
+}
+
+.contact-container {
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+  background-color: #222222;
 }
 /*# sourceMappingURL=main.css.map */

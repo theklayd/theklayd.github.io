@@ -107,11 +107,17 @@ body {
 
 // contact
   .contact-container{
-    height:100vh;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    background-color: #222222;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-column-gap: 0;
+    grid-row-gap: 0;
+    background-color: #eaeaea;
+  }
+
+  .folder{
+    grid-column: 1;
+    grid-row: 3;
   }
 
   

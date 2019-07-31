@@ -28,31 +28,31 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <section class=" welcome-container" data-anchor="home">
-      <div class="welcome">
-        <div class="icon iconAnimation play" id="icon" onclick="resetAnim()" style="background-image: url(assets/sprite_60fps.svg)"></div>
-        <h1>Hi, I'm full-stack web developer!</h1>
-        <h3>My name is Clyde Santos.</h3>
-        <a href="http://127.0.0.1:5500/#about">more details</a>
-      </div>
-    </section>
+  <section class=" welcome-container" data-anchor="home">
+    <div class="welcome">
+      <div class="icon iconAnimation play" id="icon" onclick="resetAnim()" style="background-image: url(assets/sprite_60fps.svg)"></div>
+      <h1>Hi, I'm full-stack web developer!</h1>
+      <h3>My name is Clyde Santos.</h3>
+      <a href="http://127.0.0.1:5500/#about">more details</a>
+    </div>
+  </section>
 
-    <section class=" about-container" data-anchor="about">
-        <h1>the 2nd </h1>
-    </section>
+  <section class=" about-container" data-anchor="about">
+      <h1>the 2nd </h1>
+  </section>
 
-    <footer class=" contact-container" data-anchor="contact">
-      <img src="assets/footer.svg" class="folder" style="width:100%; height: auto;">
-    </footer>
+  <footer class=" contact-container" data-anchor="contact">
+    <img src="assets/footer.svg" class="folder" style="width:100%; height: auto;">
+  </footer>
+
   <script>
-
     function resetAnim(){
       var icon = document.getElementById('icon');
       icon.style.animation ='none';
       icon.offsetHeight;  /* trigger reflow */
       icon.style.animation = null;
     }
-
   </script>
+  
 </body>
 </html>

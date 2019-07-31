@@ -118,16 +118,45 @@ body {
 
 .contact-container {
   background-color: #eaeaea;
-  min-height: 100%;
-  height: auto !important;
-  /* This line and the next line are not necessary unless you need IE6 support */
-  height: 100%;
-  margin: 0 auto auto;
+  margin: 0 auto;
   /* the bottom margin is the negative value of the footer's height */
+  position: relative;
 }
 
 .folder {
   height: auto;
   width: 100%;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.center h1 {
+  color: white;
+  font-size: calc(1em + 1vw);
+}
+
+.center p {
+  color: white;
+  font-size: calc(0.6em + 1vw);
+  text-align: center;
+  margin: 2px;
+}
+
+.copyright {
+  color: white;
+  text-align: center;
+}
+
+.copyright-container {
+  background-color: #222222;
+  bottom: 0;
+  width: 100%;
+  position: absolute;
 }
 /*# sourceMappingURL=main.css.map */

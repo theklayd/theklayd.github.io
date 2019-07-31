@@ -130,7 +130,7 @@ body {
 
 .center {
   position: absolute;
-  top: 50%;
+  top: 55%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -139,6 +139,7 @@ body {
 .center h1 {
   color: white;
   font-size: calc(1em + 1vw);
+  text-align: center;
 }
 
 .center p {

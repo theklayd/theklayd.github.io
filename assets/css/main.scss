@@ -119,17 +119,19 @@ body {
 
   .center {
     position: absolute;
-    top: 50%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
     h1{
       color: white;
       font-size: calc(1em + 1vw);
+      text-align:center;
     }
     p{
       color: white;
       font-size: calc(0.6em + 1vw);
       text-align: center;
+
       margin:2px;
     }
   }

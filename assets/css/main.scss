@@ -107,20 +107,16 @@ body {
 
 // contact
   .contact-container{
-    height: 100vh;
-    // display: grid;
-    // grid-template-columns: 1fr;
-    // grid-template-rows: 1fr 1fr 1fr;
-    // grid-column-gap: 0;
-    // grid-row-gap: 0;
     background-color: #eaeaea;
-    // position: absolute;
+    min-height: 100%;
+    height: auto !important; /* This line and the next line are not necessary unless you need IE6 support */
+    height: 100%;
+    margin: 0 auto auto; /* the bottom margin is the negative value of the footer's height */
   }
 
-  // .folder{
-  //   grid-column: 1;
-  //   grid-row: 3;
-    
-  // }
-
+  .folder{
+    height: auto;
+    width: 100%;
+  }
+// contact end
   

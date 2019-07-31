@@ -117,7 +117,17 @@ body {
 }
 
 .contact-container {
-  height: 100vh;
   background-color: #eaeaea;
+  min-height: 100%;
+  height: auto !important;
+  /* This line and the next line are not necessary unless you need IE6 support */
+  height: 100%;
+  margin: 0 auto auto;
+  /* the bottom margin is the negative value of the footer's height */
+}
+
+.folder {
+  height: auto;
+  width: 100%;
 }
 /*# sourceMappingURL=main.css.map */

@@ -110,6 +110,7 @@ body {
     background-color: #eaeaea;
     margin: 0 auto; /* the bottom margin is the negative value of the footer's height */
     position: relative;
+    // height: 100vh;
   }
 
   .folder{
@@ -134,16 +135,15 @@ body {
     }
   }
 
-  .copyright{
-    color: white;
-    text-align: center;
-  }
-
-  .copyright-container{
+  .bottom{
     background-color: #222222;
     bottom: 0;
     width: 100%;
     position: absolute;
+    p{
+      color: white;
+      text-align: center;
+    }
   }
 
 

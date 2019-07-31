@@ -148,15 +148,15 @@ body {
   margin: 2px;
 }
 
-.copyright {
-  color: white;
-  text-align: center;
-}
-
-.copyright-container {
+.bottom {
   background-color: #222222;
   bottom: 0;
   width: 100%;
   position: absolute;
+}
+
+.bottom p {
+  color: white;
+  text-align: center;
 }
 /*# sourceMappingURL=main.css.map */

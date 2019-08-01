@@ -105,15 +105,33 @@ body {
           animation-name: play59;
 }
 
+.title {
+  margin: 0;
+  padding: 30px;
+  font-size: calc(2em + 1vw);
+  text-align: center;
+  background: #eaeaea;
+}
+
 .offers-container {
-  height: 100vh;
+  background-color: #eaeaea;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-  -ms-grid-rows: 1fr 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr 1fr;
-  background-color: #eaeaea;
+  -ms-grid-columns: (200px)[auto-fit];
+      grid-template-columns: repeat(auto-fit, 200px);
+  grid-gap: 50px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.offer {
+  grid-column: auto;
+}
+
+.offer h2, .offer p {
+  margin: 10px;
+  text-align: center;
 }
 
 .contact-container {

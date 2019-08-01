@@ -96,13 +96,28 @@ body {
 // welcome end
 
 // offers
-  .offers-container{
-    height:100vh;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    background-color: #eaeaea;
+  .title{
+    margin:0;
+    padding: 30px;
+    font-size: calc(2em + 1vw);
+    text-align: center;
+    background: #eaeaea;
   }
+  .offers-container{
+    background-color: #eaeaea;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 200px);
+    grid-gap: 50px;
+    justify-content: center;
+  }
+  .offer{
+    grid-column: auto;
+    h2,p{
+      margin:10px;
+      text-align: center;
+    }
+  }
+
 // offers end
 
 

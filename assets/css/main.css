@@ -134,6 +134,58 @@ body {
   text-align: center;
 }
 
+.offers-container {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (200px)[auto-fit];
+      grid-template-columns: repeat(auto-fit, 200px);
+  grid-gap: 50px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.skills-container {
+  margin-top: 100px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (260px)[auto-fit];
+      grid-template-columns: repeat(auto-fit, 260px);
+  grid-gap: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.skill {
+  grid-column: auto;
+  position: relative;
+}
+
+.details {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.details h1 {
+  font-size: calc(1.5em + 1vw);
+  color: white;
+  text-align: center;
+}
+
+.level {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  color: white;
+}
+
 .contact-container {
   background-color: #eaeaea;
   margin: 0 auto;

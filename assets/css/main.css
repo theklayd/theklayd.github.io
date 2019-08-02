@@ -134,24 +134,12 @@ body {
   text-align: center;
 }
 
-.offers-container {
-  width: 100%;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (200px)[auto-fit];
-      grid-template-columns: repeat(auto-fit, 200px);
-  grid-gap: 50px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
 .skills-container {
   margin-top: 100px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (260px)[auto-fit];
-      grid-template-columns: repeat(auto-fit, 260px);
+  -ms-grid-columns: (200px)[auto-fill];
+      grid-template-columns: repeat(auto-fill, 200px);
   grid-gap: 20px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -163,26 +151,30 @@ body {
   position: relative;
 }
 
-.details {
+.skill h1 {
   position: absolute;
-  background-image: url(../svg/skills.svg);
-}
-
-.details h1 {
-  font-size: calc(0.8em + 1vw);
-  color: white;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.level {
-  position: absolute;
-  bottom: 10px;
+  top: 0;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   color: white;
+  text-align: center;
+  width: 100%;
+}
+
+.skill p {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  color: white;
+  opacity: 0.6;
+  font-size: 10px;
+}
+
+.skill-background {
+  position: relative;
 }
 
 .contact-container {

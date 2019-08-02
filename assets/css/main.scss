@@ -31,8 +31,6 @@ body {
       color: #F4F1D0;
     }
 
-
-
     a{
       background-color: #111111;
       border: none;
@@ -55,7 +53,6 @@ body {
         margin-top: 5px;
       }
     }
-
   }
 
 
@@ -118,18 +115,10 @@ body {
     }
   }
 
-  .offers-container{
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, 200px);
-    grid-gap: 50px;
-    justify-content: center;
-  }
-
   .skills-container{
     margin-top: 100px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, 260px);
+    grid-template-columns: repeat(auto-fill, 200px);
     grid-gap: 20px;
     justify-content: center;
   }
@@ -137,35 +126,32 @@ body {
   .skill{
     grid-column: auto;
     position: relative;
+    h1{
+      position: absolute;
+      top:0;
+      left: 50%;
+      transform : translateX(-50%);
+      color: white;
+      text-align: center;
+      width: 100%;
+    }
+    p{
+      position: absolute;
+      bottom:0;
+      left: 50%;
+      transform : translateX(-50%);
+      color: white;
+      opacity: 0.6;
+      font-size: 10px;
+
+    }
+  }
+
+  .skill-background{
+    position: relative;
   }
   
-  .details{
-    position: absolute; 
-    background-image: url(../svg/skills.svg);
-    h1{
-      font-size: calc(0.8em + 1vw);
-      color: white;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      // text-align: center;
-      // top: 50%;
-      // left: 50%;
-      // transform: translate(-50%, -50%);
-    }
-    // top: 50%;
-    // left: 50%;
-    // transform: translate(-50%, -50%);
 
-   }
-
-   .level{
-    position: absolute; 
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    color: white;
-   }
 // offers end
 
 

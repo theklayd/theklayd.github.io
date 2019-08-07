@@ -129,6 +129,11 @@ body {
   grid-column: auto;
 }
 
+.offer img {
+  -webkit-filter: drop-shadow(0px 5px 5px #999999);
+          filter: drop-shadow(0px 5px 5px #999999);
+}
+
 .offer h2, .offer p {
   margin: 10px;
   text-align: center;

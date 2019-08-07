@@ -109,10 +109,14 @@ body {
   }
   .offer{
     grid-column: auto;
+    img{
+      filter: drop-shadow(0px 5px 5px rgb(153, 153, 153));
+    }
     h2,p{
       margin:10px;
       text-align: center;
     }
+
   }
 
   .skills-container{

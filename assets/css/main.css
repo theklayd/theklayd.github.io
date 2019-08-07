@@ -34,7 +34,7 @@ body {
   color: #F4F1D0;
 }
 
-.welcome a {
+.welcome button {
   background-color: #111111;
   border: none;
   color: #F4F1D0;
@@ -52,7 +52,7 @@ body {
   cursor: pointer;
 }
 
-.welcome a img {
+.welcome button img {
   height: 30px;
   width: 30px;
   margin-top: 5px;

@@ -33,7 +33,7 @@
       <div class="icon iconAnimation play" id="icon" onclick="resetAnim()" style="background-image: url(assets/svg/iconanimation.svg)"></div>
       <h1>Hi, I'm Clyde Santos!</h1>
       <h3>Application, Web, Mobile, and Game Developer.</h3>
-      <a href="https://theklayd.github.io/#offers">more details</a>
+      <button onclick="scrollToOffers()">more details</button>
     </div>
   </section>
 
@@ -191,6 +191,10 @@
       icon.style.animation ='none';
       icon.offsetHeight;  /* trigger reflow */
       icon.style.animation = null;
+    }
+
+    function scrollToOffers(){
+      document.getElementById("offers").scrollIntoView({behavior: "smooth", block: "start"});
     }
   </script>
 

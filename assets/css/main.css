@@ -140,7 +140,7 @@ body {
 }
 
 .skills-container {
-  margin-top: 100px;
+  margin: 100px 20% 0 20%;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (200px)[auto-fill];

@@ -120,7 +120,7 @@ body {
   }
 
   .skills-container{
-    margin-top: 100px;
+    margin: 100px 20% 0 20%; //top right bottom left
     display: grid;
     grid-template-columns: repeat(auto-fill, 200px);
     grid-gap: 20px;
